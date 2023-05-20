@@ -1,0 +1,15 @@
+#include<bits/stdc++.h>
+using namespace std;
+int  factorial(int n){
+    if(n==0){
+    return 1;}
+    int factnm1=factorial(n-1);
+    int fact=factnm1*n;
+
+    return fact;
+}
+int main(){
+    int p=factorial(4);
+    cout<<"factorial is   "<<p;
+    return 0;
+}
