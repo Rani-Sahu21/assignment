@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+void swap(int *a,int *b){
+     
+     int temp=*a;
+     *a=*b;
+     *b=temp;
+
+     cout<<"a="<<*a<<endl;
+     cout<<"b="<<*b;
+}
+int main(){
+
+int a=5;
+int *p1=&a;
+int b=4;
+int *p2=&b;
+
+cout<<"a="<<a<<endl;
+cout<<"b="<<b<<endl;
+
+swap(&a,&b);
+
+
+ return 0;
+}
