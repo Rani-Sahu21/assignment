@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace std;
+bool linear_search(int arr[] , int size , int key){
+    for(int i =0  ; i< size ; i++){
+        if(arr[i]== key) return 1;
+                
+    }
+    return 0;
+}
+int main(){
+    int array[5]={2,4,1,3,5};
+    int key;
+    cout<<"Enter the key to find : "<<endl;
+    cin>>key;
+    bool mil_gya = linear_search(array , 5 ,key );
+ if(mil_gya ) cout<<"Entered key is Present"<<endl;
+
+ else cout<<"Entered key is NOT Present"<<endl;
+    return 0;
+}
